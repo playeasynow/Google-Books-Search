@@ -1,17 +1,14 @@
 {
-  "name": "react-book-finder",
-  "version": "0.1.0",
-  "private": true,
   "dependencies": {
-    "react": "^16.4.1",
-    "react-bootstrap": "^0.32.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "concurrently": "^4.1.0"
   },
+  "name": "Google-Books-Search",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "start": "concurrently \"cd server && node server.js\" \"cd client && npm start\""
+  },
+  "repository": "https://github.com/playeasynow/Google-Books-Search.git",
+  "author": "Play Easy Now <16202860+playeasynow@users.noreply.github.com>",
+  "license": "MIT"
 }
