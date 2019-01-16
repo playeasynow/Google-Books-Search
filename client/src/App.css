@@ -22,6 +22,15 @@
   font-size: large;
 }
 
+.text-dark {
+  color: black;
+}
+
+.main-content {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

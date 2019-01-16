@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import book from '../images/book.svg';
+import book from '../../images/book.svg';
 import './Gallery.css';
 
 // TODO: Can this component be functional instead?

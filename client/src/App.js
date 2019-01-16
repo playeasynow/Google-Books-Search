@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import axios from "axios";
 import logo from './book.png';
 import './App.css';
-import './util.css';
+import NoMatch from "./pages/NoMatch";
+import Saved from "./pages/Saved";
 import { FormGroup, FormControl, InputGroup, Glyphicon } from 'react-bootstrap';
-import Gallery from './components/Gallery.js';
+import Gallery from './components/Gallery/Gallery.js';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Nav from './components/Nav/index.js';
 
 class App extends Component {
   constructor(props) {
@@ -160,7 +163,25 @@ class App extends Component {
     // );
 
     return (
-      <div className="App">
+      <div className="App container">
+        <ul className="nav justify-content-end">
+          <li className="nav-item">
+            <a className="nav-link active text-dark" href="#">Home</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link text-dark" href="#">Saved</a>
+          </li>
+        </ul>
+        {/* <Router>
+          <div>
+          <Nav />
+          <Switch> */}
+            {/* <Route exact path="/" component={Gallery} /> */}
+            {/* <Route exact path="/saved" component={Saved} /> */}
+            {/* <Route component={NoMatch} /> */}
+          {/* </Switch>
+          </div>
+        </Router> */}
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Google Books</h1>
