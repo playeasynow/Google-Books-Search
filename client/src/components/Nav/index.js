@@ -31,9 +31,9 @@ class Nav extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-light bg-light mb-2">
-                <Link className="navbar-brand" to="/">
-                Google Books
+            <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+                <Link className="navbar-brand text-white" to="/">
+                <h2><i><b>Google Books</b></i></h2>
                 </Link>
                 <button
                     onClick={this.toggleNav}
@@ -46,15 +46,15 @@ class Nav extends Component {
                     >
                         <span className="navbar-toggler-icon" />
                     </button>
-                    <div className={`${this.state.open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
-                        <ul className="navbar-item">
-                            <li className="nav-item">
+                    <div className={`${this.state.open ? "" : "collapse "}navbar-collapse navBtn`} id="navbarNav">
+                        <ul className="navbar-item list-unstyled">
+                            <li className="nav-item mt-3">
                                 <Link
                                 onClick={this.toggleNav}
                                 className={window.location.pethname === "/" ? "nav-link active" : "nav-link"}
                                 to="/saved"
                                 >
-                                Saved
+                                Saved Books
                                 </Link>
                             </li>
                         </ul>
