@@ -1,29 +1,34 @@
-# Create React Express App
+# Google Books :book:
+UT Austin Coding Bootcamp | Unit 20 MERN \
+v1.0 \
+Orig. Deployment - January 15, 2019
 
-## About This Boilerplate
+# Challenge
+Build our first app using the entire MERN stack! Additionally, use the Google Books API to retrieve their library. This was very tough - having to think through the react app and setting up a server was a challenge, but I'm happy with the outcome. Enjoy!
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+# User Guide
+<img src="./client/public/google-books-screen.png" 
+alt="googleBooks" width="500" height="300" border="10" /></a>
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+Here's how it works:
 
-## Starting the app locally
+- Clone the repo to your local server
+- `yarn install`
+- `yarn start`
+- Type in the name of a book, any book, and see the results. Save any of the books you find intersting. Navigate to the "Saved Books" page and see what books you kept. 
+- Have fun!
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+The app uses the entire MERN stack. A very fun way to start playing with MERN concepts especially!
 
-```
-yarn install
-```
+# Built Utilizing: 
+react.js \
+Bootstrap \
+node.js \
+express \
+Google Books API
 
-This should install node modules within the server and the client folder.
+# Original Contributors:
+Ezequiel Calderon (current edition and ongoing maintenance) - <https://github.com/playeasynow>
 
-After both installations complete, run the following command in your terminal:
-
-```
-yarn start
-```
-
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
-
-## Deployment (Heroku)
-
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+# Get Involved!
+If you have any recommendations, let me know! Email: ezequiel.calderon.jr@gmail.com. If you'd like to take it in your own direction, go right ahead. 
