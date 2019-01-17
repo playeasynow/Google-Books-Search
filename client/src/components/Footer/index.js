@@ -5,7 +5,7 @@ function Footer() {
         <footer>
             <hr />
             <p className="text-center">
-                <i className="fab fa-github" /> built by React.js
+                <i className="fab fa-github" /> built by React.js <br /> powered by Google Books API
             </p>
         </footer>
     );
