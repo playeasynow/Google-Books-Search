@@ -22,9 +22,9 @@ module.exports = {
         .catch(err => res.status(422).json(err));
     },
     remove: function(req, res) {
-        db.Book.findById(req.params.id)
+        db.Book.findById({ _id: req.params.id })
         .then(dbBook => dbBook.remove())
-        .then(dbBook => res.jon(dbBook))
+        .then(dbBook => res.json(dbBook))
         .catch(err => res.status(422).json(err));
     }
 };
